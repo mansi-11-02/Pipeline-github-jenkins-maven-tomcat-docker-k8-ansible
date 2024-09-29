@@ -106,6 +106,32 @@ Try running the cluster.yml playbook to check if the service is getting deployed
 Delete deployment and service 
 ![image](https://github.com/user-attachments/assets/31bc9389-a521-4be9-9317-8cba7679256a)
 
+Connect jenkins-server and ansible-server with ssh
+
+Go to Jenkins, In manage jenkins > plugins > ansible
+![image](https://github.com/user-attachments/assets/fe010217-9aca-4acc-b744-ff00d705f37e)
+
+Go to Manage jenkins > System > add ssh server > 
+![image](https://github.com/user-attachments/assets/bf70ee0a-636a-44f6-a639-29e182000547)
+
+Go to your project > configure
+![image](https://github.com/user-attachments/assets/3293d5cb-40c4-400c-9c15-92cc93e95067)
+
+Build project
+
+Copy the external ip of your service and run on your browser
+
+![image](https://github.com/user-attachments/assets/8734ae9b-c4ae-4e77-9241-736fad701862)
+
+This webpage should be visible.
+![image](https://github.com/user-attachments/assets/83fe76b5-87ab-4a3a-a78c-bc1e4b0b8b61)
+
+
+
+
+
+
+
 
 
 
