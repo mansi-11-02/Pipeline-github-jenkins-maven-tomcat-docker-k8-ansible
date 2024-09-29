@@ -3,46 +3,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Basic JSP Website</title>
+    <title>JSP Example</title>
     <style>
         body {
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333; /* Dark text color */
             font-family: Arial, sans-serif;
         }
-        header, footer {
-            background-color: #f8f9fa;
+        .header {
+            background-color: #4682b4; /* Steel blue header */
+            color: white;
             padding: 10px;
             text-align: center;
         }
-        nav {
-            margin: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #007bff;
-        }
         .content {
             margin: 20px;
+            padding: 20px;
+            background-color: #ffffff; /* White content background */
+            border: 1px solid #ccc;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My JSP Website</h1>
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
+    <div class="header">
+        <h1>Welcome to My JSP Page</h1>
+    </div>
     <div class="content">
         <h2>Current Date and Time</h2>
         <p>The current date and time is: <%= new Date() %></p>
     </div>
-    <footer>
-        <p>© 2024 My JSP Website</p>
-    </footer>
 </body>
 </html>
