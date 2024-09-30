@@ -126,6 +126,19 @@ Copy the external ip of your service and run on your browser
 This webpage should be visible.
 ![image](https://github.com/user-attachments/assets/83fe76b5-87ab-4a3a-a78c-bc1e4b0b8b61)
 
+To automate:
+modify your cluster.yml by adding the following task to the start:
+
+```yml
+tasks:
+    - name: Create Kubernetes Service
+      command: kubectl rollout restart deployment/my-app
+      register: service_output
+```
+and build in jenkins again and check your website is working or not.
+
+
+
 
 
 
